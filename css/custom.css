@@ -71,21 +71,21 @@ body {
   border-top-right-radius: 100px;
   border-top-left-radius: 0px;
   background-color: #7d7c7a;
-  transition: width 2s;
+  transition: all 2s;
 }
 
 #main .bubble:hover {
   position: absolute;
   top: 10%;
   left: 70%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 100px;
   border-top-left-radius: 0px;
   background-color: #fff44f;
-  transition: width 2s;
+  transition: all 1s;
 }
 
 #main .bubble1 {
@@ -99,20 +99,22 @@ body {
   border-top-right-radius: 0px;
   border-top-left-radius: 100px;
   background-color: #7d7c7a;
+  transition: all 1s;
 }
 
 #main .bubble1:hover {
   position: absolute;
   top: 70%;
   left: 15%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 100px;
   border-top-right-radius: 0px;
   border-top-left-radius: 100px;
   background-color: #fff44f;
-  transition: width 2s;
+  transition: all 1s;
+
 }
 
 #main .text-box {
