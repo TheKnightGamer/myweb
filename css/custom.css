@@ -2,12 +2,10 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
 body {
   margin: 0;
   overflow: hidden;
   display: block;
-  background-color: #1d1d1d;
   color: #ffffff;
 }
 
@@ -31,9 +29,8 @@ body {
 
 #sidebar .sb-center a {
   font-size: 20px;
-  color: #4d4d4e;
+  color: #f7f7f7;
   display: block;
-  line-height: 61px;
   height: 60px;
   position: relative;
   text-decoration: none;
@@ -46,10 +43,52 @@ body {
   border-radius: 10px;
 }
 
+.material-icons {
+  line-height: 61px;
+}
+
+#sidebar .sb-center a:hover i {
+  opacity: 0;
+}
+
+#sidebar .sb-center a:after {
+  content: '';
+  font-size: 13px;
+  position: absolute;
+  top: 22px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+#sidebar .sb-center a:first-child:after {
+  content: "HOME";
+}
+
+#sidebar .sb-center a:first-child+a:after {
+  content: "ABOUT";
+}
+
+#sidebar .sb-center a:first-child+a+a:after {
+  content: "PROJECTS";
+}
+
+#sidebar .sb-center a:last-child:after {
+  content: "CONTACT";
+}
+
+#sidebar .sb-center a:hover:after {
+  opacity: 1;
+}
+
 #main {
   height: 100%;
   width: 100%;
   position: absolute;
+  background-image: linear-gradient(to right, #262626, #363131);
 }
 
 #main .home-box {
@@ -59,6 +98,8 @@ body {
   left: 30%;
   width: 38%;
 }
+
+/* Animation Shape */
 
 #main .bubble {
   position: absolute;
@@ -71,7 +112,7 @@ body {
   border-top-right-radius: 100px;
   border-top-left-radius: 0px;
   background-color: #7d7c7a;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 #main .bubble:hover {
@@ -115,6 +156,36 @@ body {
   background-image: linear-gradient(to bottom left, #9bff4f, #fff44f);
   transition: all 1s;
 }
+
+#main .ball {
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  width: 100px;
+  height: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  background-color: #7d7c7a;
+  transition: all 1s;
+}
+
+#main .ball:hover {
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  background-image: linear-gradient(#de3333, #ff1c1c);
+  transition: all 1s;
+}
+
+/* End Animation Shape  */
 
 #main .text-box {
   font-family: 'Source Sans Pro', sans-serif;
@@ -217,3 +288,5 @@ a {
   height: 20px;
   background-color: green;
 }
+
+
