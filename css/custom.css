@@ -16,6 +16,23 @@ body {
   background-image: linear-gradient(to right, #262626, #363131);
 }
 
+#home {
+  font-size: 40px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+#home {
+  font-size: 30px;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+}
+
+
 /* Animation Shape */
 
 #main .bubble {
