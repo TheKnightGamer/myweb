@@ -17,19 +17,48 @@ body {
 }
 
 #home {
-  font-size: 40px;
   position: absolute;
   left: 40%;
   top: 40%;
+  width: 300px;
 }
 
-@media only screen and (max-width: 600px) {
+#home .name {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+#home a {
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 5px;
+  bottom: 15%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#home a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
 #home {
-  font-size: 30px;
+  font-size: 50px;
   position: absolute;
-  left: 25%;
+  left: 30%;
   top: 40%;
 }
+
+}
+
+@media only screen and (max-width: 425px) {
+#home {
+  font-size: 50px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
 }
 
 
