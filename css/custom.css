@@ -18,7 +18,7 @@ body {
   border-bottom-left-radius: 35%;
   border-bottom-right-radius: 100%;
   border-top-left-radius: 55%;
-  box-shadow: 10px 10px 10px 10px gray ;
+  box-shadow: 10px 10px 20px 20px rgb(133, 133, 133) ;
 }
 
 #home {
