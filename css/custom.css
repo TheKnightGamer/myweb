@@ -5,20 +5,24 @@ html {
 
 body {
   margin: 0;
-  overflow: hidden;
   display: block;
   color: #ffffff;
+}
+
+header {
+  color: #fff;
+  background: #333;
 }
 
 #main {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(160deg, #000000 , #434343);
+  background-image: linear-gradient(160deg, #000000 ,#232323, #434343);
   border-bottom-left-radius: 35%;
   border-bottom-right-radius: 100%;
   border-top-left-radius: 55%;
-  box-shadow: 10px 10px 20px 20px rgb(133, 133, 133) ;
+  box-shadow: 10px 10px 20px 0px #858585;
 }
 
 #home {
@@ -36,7 +40,7 @@ body {
 #home a {
   font-size: 15px;
   font-weight: 400;
-  margin-right: 5px;
+  margin-right: 15px;
   bottom: 15%;
   text-decoration: none;
   color: #ffffff;
@@ -45,6 +49,78 @@ body {
 #home a:hover {
   text-decoration: underline;
 }
+
+.grid {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(22rem,1fr));
+  grid-gap: 0rem;
+}
+
+.grid-box {
+  box-shadow: 0 0px 1px 0px #000000;
+  position: relative;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.grid img {
+  height: 30%;
+}
+
+.grid-box:hover {
+  box-shadow: 0 0px 12px 1px rgb(197, 197, 197);
+}
+
+.grid-box:hover .grid-box-back {
+  opacity: 1;
+}
+
+.grid-box-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: inherit;
+  background: inherit;
+  border-radius: 6px;
+}
+
+.grid-box-text {
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 10px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  box-shadow: none;
+  background-color: #fff;
+  color: #222;  
+}
+
 
 @media only screen and (max-width: 768px) {
 #home {
@@ -137,6 +213,7 @@ body {
   border-top-left-radius: 100px;
   background-color: #434343;
   transition: all 1s;
+  box-shadow: 5px 5px 10px 0px #858585
 }
 
 #main .ball:hover {
