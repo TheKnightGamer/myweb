@@ -71,10 +71,6 @@ header {
   height: 30%;
 }
 
-.grid-box:hover {
-  box-shadow: 0 0px 12px 1px rgb(197, 197, 197);
-}
-
 .grid-box:hover .grid-box-back {
   opacity: 1;
 }
